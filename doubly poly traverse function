@@ -1,0 +1,23 @@
+void traverse(node *head)
+{
+	if (head == NULL)
+	{
+		printf("No Data Found");
+	}
+	while (head != NULL)
+	{
+		if (head->coeff > 0)
+		{
+			printf("%dX^%d", head->coeff, head->power);
+			if (head->next != NULL)
+			{
+				printf("+");
+			}
+		}
+		else
+		{
+			printf("%dX^%d", head->coeff, head->power);
+		}
+		head = head->next;
+	}
+}
