@@ -1,0 +1,24 @@
+void addition(node *one, node *two)
+{
+	result = 0;
+	// staring of while
+	while (one != NULL)
+	{
+		two = head2;
+		while (two != NULL)
+		{
+			if (one->power == two->power)
+			{
+				result = one->coeff + two->coeff;
+				temp = (node *)(malloc(sizeof(node)));
+				temp->coeff = result;
+				temp->power = two->power;
+				temp->next = addRes;
+				addRes = temp;
+			}
+			two = two->next;
+		}
+		one = one->next;
+	}
+	// end of while
+}
