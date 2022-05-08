@@ -1,0 +1,19 @@
+void multi(node *head1, node *head2)
+{
+	while (head1 != NULL)
+	{
+		ptr = head2;
+		while (ptr != NULL)
+		{
+			temp = (node *)(malloc(sizeof(node)));
+
+			temp->coeff = (head1->coeff) * (ptr->coeff);
+			
+				temp->power = (head1->power) + (ptr->power);
+			
+			temp->next = mul;
+			mul = temp;
+			ptr = ptr->next;
+		}
+		head1 = head1->next;
+	}
