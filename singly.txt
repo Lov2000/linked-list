@@ -30,7 +30,6 @@ printf("%d ",x->info);
 x=x->next;
 }
 }
-
 void main()
 {
 node *a;
