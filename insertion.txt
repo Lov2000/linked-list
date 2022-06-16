@@ -16,7 +16,6 @@ void insertAfterElement(node *head, int item, int after);
 void deleteFromBeginning(node **head);
 void deleteFromEnd(node **head);
 void deleteAfterElement(node *head, int after);
-
 void main()
 {
 	node *head;
